@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Local databases and secrets
+*.db
+.env
+
+# Test & tooling output
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/

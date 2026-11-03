@@ -1,0 +1,6 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "ShopEx",
+    "NSLocationWhenInUseUsageDescription": "ShopEx uses your location to find the grocery stores and the best prices near you."
+  }
+}

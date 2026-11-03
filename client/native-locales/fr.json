@@ -1,0 +1,6 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "ShopEx",
+    "NSLocationWhenInUseUsageDescription": "ShopEx utilise votre position pour trouver les épiceries et les meilleurs prix près de chez vous."
+  }
+}

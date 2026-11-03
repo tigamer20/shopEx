@@ -158,7 +158,8 @@ Secrets are only ever read from the environment; never commit a `.env` file (onl
 | `ADMIN_TOKEN` | (unset) | Enables `POST /api/v1/admin/refresh` |
 | `OVERPASS_URL` | `https://overpass-api.de/api/interpreter` | Store discovery endpoint |
 | `OSRM_URL` | `https://router.project-osrm.org` | Routing server (public demo server: replace it for real traffic) |
-| `HTTP_TIMEOUT_S` | `20` | Timeout for outbound calls |
+| `HTTP_TIMEOUT_S` | `20` | Timeout for outbound calls to OSRM |
+| `OVERPASS_TIMEOUT_S` | `45` | Overpass query timeout (store discovery) |
 | `MAX_RADIUS_KM` | `50` | Largest search radius accepted |
 | `MAX_STORES_PER_AREA` | `60` | Nearest stores kept per discovery |
 | `PRICE_SOURCE` | `demo` | Price source plug-in |
@@ -200,7 +201,8 @@ npx expo export -p web                        # production web build into dist/
 
 ## Deployment
 
-- **Web + API on Render**: one-click Blueprint ([render.yaml](render.yaml)), step by step in
+- **Web + API on Render, database on Neon** (both in Ohio, free tiers): Render Blueprint
+  ([render.yaml](render.yaml)) plus a Neon Postgres project, step by step in
   [docs/DEPLOY_RENDER.md](docs/DEPLOY_RENDER.md).
 - **Android and iOS apps**: EAS Build and Submit, see [docs/MOBILE_BUILD.md](docs/MOBILE_BUILD.md).
 - **Security model and dependency policy**: [docs/SECURITY.md](docs/SECURITY.md).
@@ -245,8 +247,8 @@ First public release (not released yet).
 - Fastest-route itinerary (exact for up to 12 stores) with map, leg times and Google Maps hand-off.
 - Catalog browsing with filters and sorting; list history and bookmarks.
 - French and English UI, light and dark themes, first-launch tutorial.
-- Daily refresh through GitHub Actions; Render Blueprint deployment; EAS build profiles for Android
-  and iOS.
+- Daily refresh through GitHub Actions; Render Blueprint deployment with Neon Postgres; EAS build
+  profiles for Android and iOS.
 
 ## Licence
 

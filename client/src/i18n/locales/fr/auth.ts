@@ -1,0 +1,32 @@
+const auth = {
+  login_title: 'Bon retour !',
+  login_subtitle: 'Connectez-vous pour retrouver vos listes.',
+  register_title: 'Créer un compte',
+  register_subtitle: 'Économisez sur votre épicerie dès aujourd’hui.',
+  email: 'Courriel',
+  email_placeholder: 'nom@exemple.ca',
+  password: 'Mot de passe',
+  password_hint: 'Au moins {min} caractères.',
+  show_password: 'Afficher le mot de passe',
+  hide_password: 'Masquer le mot de passe',
+  display_name: 'Nom affiché',
+  display_name_placeholder: 'Ex. : Camille',
+  language: 'Langue',
+  login_cta: 'Se connecter',
+  register_cta: 'Créer mon compte',
+  no_account: "Pas encore de compte ? S'inscrire",
+  have_account: 'Déjà un compte ? Se connecter',
+  errors: {
+    invalid_credentials: 'Courriel ou mot de passe invalide.',
+    email_taken: 'Ce courriel est déjà utilisé.',
+    email_required: 'Entrez votre courriel.',
+    email_invalid: 'Entrez un courriel valide.',
+    password_required: 'Entrez votre mot de passe.',
+    password_too_short: 'Le mot de passe doit contenir au moins {min} caractères.',
+    password_too_long: 'Le mot de passe doit contenir au plus {max} caractères.',
+    display_name_required: 'Entrez un nom.',
+    display_name_too_long: 'Le nom doit contenir au plus {max} caractères.',
+  },
+};
+
+export default auth;
